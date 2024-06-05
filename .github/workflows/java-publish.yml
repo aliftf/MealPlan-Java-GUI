@@ -21,4 +21,4 @@ jobs:
       - name: Publish package
         run: mvn deploy -s $GITHUB_WORKSPACE/settings.xml
         env:
-          GITHUB_TOKEN: ${{ secrets.JAVA_TOKEN }}
+          GITHUB_TOKEN: ${{ secrets.COTS_TOKEN }}
