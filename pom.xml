@@ -13,9 +13,11 @@
     </properties>
     
     <distributionManagement>
-        <id>github</id>
-        <name>Github Packages</name>
-        <url>https://maven.pkg.github.com/aliftf/MealPlan-Java-GUI</url>
+        <repository>
+            <id>github</id>
+            <name>Github Packages</name>
+            <url>https://maven.pkg.github.com/aliftf/MealPlan-Java-GUI</url>
+        </repository>
     </distributionManagement>
 
     <dependencies>
