@@ -7,7 +7,7 @@ on:
 jobs:
   build:
     runs-on: ubuntu-latest
-    permission:
+    permissions:
       content: read
       packages: write
     steps:
