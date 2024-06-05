@@ -5,10 +5,10 @@ on:
   release:
     types: [created]
 jobs:
-  build:
+  build: 
     runs-on: ubuntu-latest
     permissions:
-      content: read
+      contents: read
       packages: write
     steps:
       - uses: actions/checkout@v4
@@ -21,4 +21,4 @@ jobs:
       - name: Publish package
         run: mvn deploy -s $GITHUB_WORKSPACE/settings.xml
         env:
-          GITHUB_TOKEN: ${{ secrets.COTS_TOKEN }}
+          GITHUB_TOKEN: ${{ secrets.JAVA_TOKEN }}
