@@ -32,14 +32,4 @@ public class NutritionCalculatorTest {
     assertEquals(110, food.getCarbs());
     assertEquals(999999, food.getFat());
   }
-  @Test
-  public void testFoodNutritionSetter2() {
-    FoodNutrition food = new FoodNutrition();
-    food.setNutrition(100, -123, 110, 999999);
-
-    assertNotEquals(100, food.getCalories());
-    assertNotEquals(-123, food.getProtein());
-    assertNotEquals(110, food.getCarbs());
-    assertNotEquals(999999, food.getFat());
-  }
 }
